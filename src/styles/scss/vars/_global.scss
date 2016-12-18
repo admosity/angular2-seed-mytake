@@ -1,0 +1,19 @@
+// Media Query
+
+$harmonise-breakpoints: (
+  'xsmall': ( only screen and ( min-width:  0 ) ),
+  'small':  ( only screen and ( max-width:  639px ) ),
+  'medium': ( only screen and ( max-width:  640px ) ),
+  'large':  ( only screen and ( max-width:  1024px ) ),
+  'xlarge': ( only screen and ( max-width:  1200px ) ),
+  'xxlarge':( only screen and ( max-width:  1440px ) ),
+) !default;
+
+
+// Fonts
+$pn-regular:      'proxima_nova_rgregular';
+$pn-bold:         'proxima_nova_rgbold';
+$pn-italic:       'proxima_novaregular_italic';
+$pn-bolditalic:   'proxima_novabold_italic';
+$pn-semibold:     'proxima_nova_ltsemibold';
+$pn-thin:         'proxima_nova_ththin';

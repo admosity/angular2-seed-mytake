@@ -1,0 +1,32 @@
+// Grid settings
+//
+$banner-img: '../assets/images/demo/banner.jpg';
+$evo-base-margin:	                      1.5em;
+$evo-base-padding:	                    1.5em;
+$evo-base-grid-max-width:               65em;
+$global-width:                          65em;
+
+$evo-card-padding:                      1.5em 1.4em;
+$evo-card-header-text-transform:        none;
+$evo-card-header-border-color:          $onyx-dark-20;
+
+$evo-button-padding:                    0.9em 1.5em;
+
+$evo-base-header-rule-margin-bottom:    0;
+$evo-base-header-rule-border:				    1px solid $onyx-dark-14;
+$evo-base-header-rule-letter-spacing:	  0;
+$evo-base-header-rule-text-transform:	  uppercase;
+
+$evo-button-wide-padding:               0.85em 3em;
+$evo-button-wide-min-width:             335px;
+
+$accordion-header-padding:              6px 20px 0;
+$accordion-content-padding:             6px 20px 0;
+$accordion-inner-padding:               1em 0 0;
+
+$evo-text-sizes:(
+	small: 1em,
+	medium: 2em,
+	large: 4em,
+	magnum: 5em
+);

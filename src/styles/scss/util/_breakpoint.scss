@@ -1,0 +1,23 @@
+// Breakpoint mixin
+
+$breakpoints: (
+	small: '(min-width: 0)',
+	medium: '(max-width: 768px)',
+	large: '(max-width: 1025px)'
+);
+
+@mixin breakpoint($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @error "The breakpoint `#{$breakpoint}` does not exist. "
+        + "See available breakpoints in map: #{map-keys($breakpoints)}.";
+  }
+}

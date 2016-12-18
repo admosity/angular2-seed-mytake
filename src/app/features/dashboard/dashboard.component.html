@@ -1,0 +1,22 @@
+<md-sidenav-layout class="" fullscreen>
+    <md-sidenav #start align="start" (open)="callOnOpen()" (close)="callOnClose()">
+        Go to <a [routerLink]="['/account']">Account Management</a>
+        <br />
+        <button md-button (click)="start.close()">Close</button>
+    </md-sidenav>
+    <button md-button (click)="start.open()">Open</button>
+    <button class="evo-button evo-button--small" (click)="onClick('clicked event')">Click me</button>
+
+    <div [appContainer] [fluid]="false">
+        <div class="row">
+            <div [appCol] [sm]="12" [lg]="6">
+                <app-account-summary></app-account-summary>
+            </div>
+            <div [appCol] [sm]="12" [lg]="6">
+                <h1>Goals</h1>
+                <app-goal>
+                </app-goal>
+            </div>
+        </div>
+    </div>
+</md-sidenav-layout>

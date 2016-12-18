@@ -1,0 +1,91 @@
+// Theme component mixins
+// Use within :host \deep\ to target from particular view
+// Note: these properties should not be previously defined in the
+// component sass to avoid overrides.
+
+@mixin theme-child(
+  $child-bem:   null,
+  $child-elem:  null,
+  $color:       null,
+  $font-size:   null,
+  $font-family: null,
+  $line-height: null
+) {
+  &__#{$child-bem} {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+    line-height: $line-height;
+  }
+  #{$child-elem} {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+    line-height: $line-height;
+  }
+}
+
+// Theme the component's colors
+@mixin theme-colors(
+  $background-color: null,
+  $color: null,
+  $caret-color: null,
+  $border-color: null
+) {
+  background-color: $background-color;
+  color: $color;
+  border-color: $border-color;
+  .evo-icon-caret-down,
+  .evo-icon-caret-up {
+    border-color: $caret-color;
+  }
+}
+
+// Theme the component's fonts
+@mixin theme-fonts(
+  $font-family: null,
+  $line-height: null,
+  $font-size: null,
+  $letter-spacing: null,
+          $text-transform: null
+) {
+  font-family: $font-family;
+  line-height: $line-height;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+  text-transform: $text-transform;
+}
+
+// Theme the component's dimensions
+@mixin theme-dimensions(
+  $height: null,
+  $width: null,
+  $margin: null,
+  $padding: null
+) {
+  height: $height;
+  width: $width;
+  margin: $margin;
+  padding: $padding;
+}
+
+// Carousel options
+@mixin theme-carousel(
+  $carousel-controls: true,
+  $carousel-controlsize: null,
+  $carousel-perfect-center: null
+) {
+  @if $carousel-perfect-center {
+    @include flex-center();
+  }
+  @if $carousel-controls {
+    .evo-carousel__prev, .evo-carousel__next {
+      display: inline-block;
+      font-size: $carousel-controlsize;
+    }
+  } @else {
+    .evo-carousel__prev, .evo-carousel__next {
+      display: none;
+    }
+  }
+}

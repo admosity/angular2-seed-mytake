@@ -1,0 +1,1 @@
+This is an extra scss folder that is included, but outside of the main build process.

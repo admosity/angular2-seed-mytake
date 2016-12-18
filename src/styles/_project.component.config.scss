@@ -1,0 +1,256 @@
+// Project Config Sample
+// This is the Harmonise config sample.
+
+/*
+========================================
+BEGIN PROJECT SIDE SASS CONFIG
+========================================
+*/
+
+$atoms:(
+  'breadcrumb',
+  'button',
+  'datepicker',
+  'dropdown',
+  'icon',
+  'icon-circle',
+  'icon-list',
+  'input',
+  'tabs',
+  'tooltip',
+);
+$molecules:(
+  'accordion',
+  'alert',
+  'article-card',
+  'card',
+  'carousel',
+  'drag-and-drop',
+  'multi-select',
+  'shelf'
+);
+$organisms:(
+  'banner',
+  'form-header',
+  'full-page',
+  'modal',
+  'sticky-footer',
+  'wheel'
+);
+
+// Accordion Variants
+$accordion-variants: (
+  variants: (
+    blue: (
+      bg: none,
+      title-font-weight: normal,
+      border-color: transparent,
+      header-txt: $sapphire-dark,
+      txt: $black,
+      icon: $sapphire-dark
+    ),
+    grey: (
+      bg:  $onyx-dark-6,
+      title-font-weight: bold,
+      border-color: $onyx-dark-20,
+      header-txt: $onyx-dark-70,
+      txt: $black,
+      icon: $sapphire-dark
+    )
+  )
+);
+
+// Alert Variants
+$alert-variants: (
+  variants: (
+    info: (
+      bg:  $sapphire-light,
+      icon: $sapphire-dark,
+      txt: $black
+    ),
+    info-dark: (
+      bg: $sapphire-bright,
+      icon: $sapphire-dark,
+      txt: $white
+    ),
+    warn: (
+      bg: $topaz-bright,
+      icon: $topaz-dark,
+      txt: $black
+    ),
+    danger: (
+      bg: $garnet-bright,
+      icon: $garnet-dark,
+      txt: $white
+    ),
+    confirmation: (
+      bg: $emerald-bright,
+      icon: $emerald-dark,
+      txt: $white
+    )
+  )
+);
+
+// Article Card Variants
+$article-card-variants: (
+  variants: (
+    info: (
+      bg:  $sapphire-light,
+      icon: $sapphire-dark,
+      txt: $black
+    )
+  )
+);
+
+$breadcrumb-variants: (
+  variants: (
+    blue: (
+      txt:  $black,
+      border: $sapphire-bright,
+      active: $sapphire-bright
+    )
+  )
+);
+
+// Button Variants
+$button-variants: (
+  variants: (
+    standard: (
+      bg: $sapphire-medium,
+      border: $sapphire-medium,
+      hover: $sapphire-dark,
+      hover-txt: $white,
+      txt: $white
+    ),
+    grey: (
+      bg: $onyx-light,
+      border: $onyx-light,
+      hover: $onyx-bright,
+      hover-txt: $white,
+      txt: $white
+    ),
+    inverted: (
+      bg: transparent,
+      border: $sapphire-medium,
+      hover: $sapphire-dark,
+      hover-txt: $white,
+      txt: $sapphire-medium
+    ),
+    inverted-white: (
+      bg: transparent,
+      border: $white,
+      hover: $sapphire-dark,
+      hover-txt: $white,
+      txt: $white
+    ),
+    text: (
+      bg: transparent,
+      border: transparent,
+      hover: transparent,
+      hover-txt: $sapphire-dark,
+      txt: $sapphire-medium
+    )
+  )
+);
+
+// Card Variants
+$card-variants: (
+  variants: (
+    info: (
+      bg:  $sapphire-diet,
+      txt: $black
+    ),
+    light: (
+      bg:  transparentize($white, .25),
+      txt: $black,
+      radius: 2px
+    ),
+    complete: (
+      bg: $sapphire-diet,
+      icon: $turquoise-bright,
+      txt: $turquoise-bright,
+    ),
+    active: (
+      bg: $sapphire-diet,
+      icon: $sapphire-bright,
+      txt: $sapphire-bright,
+    )
+  )
+);
+$icon-variants: (
+  variants: (
+    light-blue: (
+      color: $sapphire-bright
+    ),
+    black: (
+      color: $black,
+    )
+  )
+);
+$icon-circle-variants: (
+  variants: (
+    blue: (
+      border: $sapphire-bright,
+      bg: $sapphire-bright,
+      color: $white,
+      width: 65px,
+      caption-color: $black
+    ),
+    info: (
+      border: $onyx-bright,
+      bg: $white,
+      color: $sapphire-bright,
+      width: 65px,
+      caption-color: $sapphire-bright
+    ),
+    white: (
+      border: $onyx-bright,
+      bg: transparent,
+      color: $white,
+      width: 65px,
+      caption-color: $sapphire-bright
+    )
+  )
+);
+
+$shelf-variants: (
+  variants: (
+    standard: (
+      bg:  $onyx-dark-6,
+      border: $onyx-dark-30,
+      txt: $black
+    ),
+    info: (
+      bg:  $sapphire-diet,
+      border: $onyx-dark-70,
+      txt: $black
+    )
+  )
+);
+
+$carousel-variants: (
+  variants: (
+    large: (
+      height: 500px,
+      width: 100%
+    ),
+    medium: (
+      height: 300px,
+      width: 100%
+    ),
+    small: (
+      height: 150px,
+      width: 100%
+    ),
+    fluid: (
+      height: auto,
+      width: 100%
+    ),
+  )
+);
+
+/*
+========================================
+END PROJECT SIDE SASS CONFIG
+========================================
+*/

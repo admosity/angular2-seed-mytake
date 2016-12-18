@@ -1,0 +1,95 @@
+// Harmonise Colors
+
+// Set theme color palatte
+$current__theme: 'harmonise';
+
+// Theme color map
+$theme-colors: (
+  harmonise: (
+    primary: #006D9E,
+    txt: #404040,
+    link: #006D9E,
+    link-hover: #000,
+    headers: #000,
+    body-bg: #EDB88B,
+    header-bg: #002C77,
+    sidebar-bg: #fff,
+    content-bg: transparent,
+    card-bg: #fff,
+    footer-bg: #000
+  )
+);
+
+// Set theme color vars per keys
+$color__primary: clr($current__theme, primary);
+$color__txt: clr($current__theme, txt);
+$color__link: clr($current__theme, link);
+$color__link-hover: clr($current__theme, link-hover);
+$color__headers: clr($current__theme, headers);
+$color__body-bg: clr($current__theme, body-bg);
+$color__header-bg: clr($current__theme, header-bg);
+$color__sidebar-bg: clr($current__theme, sidebar-bg);
+$color__content-bg: clr($current__theme, content-bg);
+$color__card-bg: clr($current__theme, card-bg);
+$color__footer-bg: clr($current__theme, footer-bg);
+
+$convo-input:     #efefef !default;
+
+$topaz:           #905501 !default;
+$topaz-dark:      #C98414 !default;
+$topaz-mid:       #FBAE17 !default;
+$topaz-light:     #FFDDAC !default;
+$topaz-bright:    #F48132 !default;
+
+$amethyst-mid:    #CF3D96;
+
+$emerald-dark:    #00582D !default;
+$emerald-medium:  #128C3F !default;
+$emerald-bright:  #72BE44 !default;
+$emerald-light:   #BDDDA3 !default;
+
+$sapphire-dark:   #002C77 !default;
+$sapphire-semi:   #00577e !default;
+$sapphire-medium: #006D9E !default;
+$sapphire-bright: #00A8C8 !default;
+$sapphire-light:  #A6E2EF !default;
+$sapphire-dull:   #e6e8f5 !default;
+
+$garnet-dark:     #820009 !default;
+$garnet-medium:   #BB2C2B !default;
+$garnet-bright:   #EF4E45 !default;
+$garnet-light:    #F9BEAD !default;
+
+$turquoise-dark:    #004C50 !default;
+$turquoise-medium:  #008075 !default;
+$turquoise-bright:  #0FB694 !default;
+$turquoise-light:   #A7D9C8 !default;
+
+$mustard-bright:    #FCC770 !default;
+$mustard-dark:      #b56b16 !default;
+
+$white:         #fff;
+$black:         #000;
+$onyx-dark:     #000000 !default;
+$onyx-medium:   #404040 !default;
+$onyx-bright:   #808080 !default;
+$onyx-light:    #BFBFBF !default;
+$onyx-dark-90:  scale-color($onyx-dark, $lightness: 10%) !default; // #1A1A1A
+$onyx-dark-80:  scale-color($onyx-dark, $lightness: 20%) !default; // #333333
+$onyx-dark-70:  scale-color($onyx-dark, $lightness: 30%) !default; // #4D4D4D
+$onyx-dark-60:  scale-color($onyx-dark, $lightness: 40%) !default; // #666666
+$onyx-dark-50:  scale-color($onyx-dark, $lightness: 50%) !default; // #808080 or Gray
+$onyx-dark-40:  scale-color($onyx-dark, $lightness: 60%) !default; // #999999
+$onyx-dark-30:  scale-color($onyx-dark, $lightness: 70%) !default; // #B3B3B3
+$onyx-dark-20:  scale-color($onyx-dark, $lightness: 80%) !default; // #CCCCCC
+$onyx-dark-14:  scale-color($onyx-dark, $lightness: 86%) !default; // #DBDBDB
+$onyx-dark-10:  scale-color($onyx-dark, $lightness: 90%) !default; // #E6E6E6
+$onyx-dark-6:   scale-color($onyx-dark, $lightness: 94%) !default; // #F0F0F0
+$onyx-dark-2:   scale-color($onyx-dark, $lightness: 98%) !default; // #FAFAFA
+
+// Button color map
+$button-colors: (
+  standard: #EF4E45,
+  grey: #72BE44,
+  inverted: transparent
+);

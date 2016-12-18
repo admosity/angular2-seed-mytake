@@ -1,0 +1,60 @@
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.scss';
+// FW v2.0
+
+// Project Icons Config
+//@import './scss/icons/icons';
+@import '~evolution-core/scss/settings/global';
+
+// Color Config
+@import '~evolution-core/scss/settings/colors';
+
+// Component Config
+@import 'project.var.config';
+@import 'project.component.config';
+
+// Core import
+@import '~evolution-core/scss/evolution-core';
+
+.row {
+  @include breakpoint(medium down) {
+    padding: 0 5%;
+  }
+}
+
+// Temp fix for scroll issue
+.md-sidenav-content {
+  overflow:hidden !important;
+}
+
+// Override material font family
+md-tab-group {
+  font-family: inherit !important;
+}
+
+[class^="md-"] {
+  font-family: inherit !important;
+}
+
+.evo-layout--grid-max-width {
+  @include breakpoint(medium down) {
+    padding: 40px 30px !important;
+  }
+}
+
+.columns {
+  @include breakpoint(medium down) {
+    margin-bottom:20px;
+  }
+}
+
+.evo-type--header-rule {
+  letter-spacing: $evo-base-header-rule-letter-spacing;
+  text-transform: $evo-base-header-rule-text-transform;
+}
+
+// temporary override for icons
+
+.evo-icon {
+  color: inherit;
+  font-size: inherit;
+}

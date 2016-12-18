@@ -1,0 +1,13 @@
+// Everything included here is extendable to components
+// Component mixins, classes, vars, functions
+
+// Utils
+@import "util/functions";
+@import "util/breakpoint";
+@import "util/flexbox";
+
+
+// Vars
+@import "vars/global";
+@import "vars/colors";
+@import 'evolution-core/scss/settings/colors';
