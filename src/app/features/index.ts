@@ -2,12 +2,9 @@ import { AccountComponent } from './account/account.component';
 import { AccountSummaryComponent } from './account/account-summary/account-summary.component';
 import { AppCommons } from '../common';
 import { CommonModule } from '@angular/common';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { GoalComponent } from './goal/goal.component';
 import { LandingComponent } from './landing/landing.component';
 import { MaterialModule } from '@angular/material';
 import { NgModule } from '@angular/core';
-import { RegisterComponent } from './register/register.component';
 import { RouterModule } from '@angular/router';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreModule } from '@ngrx/store';
@@ -17,10 +14,7 @@ import { reducer } from './feature.reducers';
 export const COMPONENTS = [
     AccountComponent,
     AccountSummaryComponent,
-    DashboardComponent,
-    GoalComponent,
-    LandingComponent,
-    RegisterComponent
+    LandingComponent
 ];
 
 @NgModule({

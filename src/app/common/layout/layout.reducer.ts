@@ -23,4 +23,5 @@ export const layoutReducer = (state = initialState, action: layout.Actions): ILa
 
 export const getShowSidenav = (state: ILayout) => {
     return state.showSidenav;
-}
+};
+
