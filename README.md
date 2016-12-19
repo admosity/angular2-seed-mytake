@@ -1,4 +1,4 @@
-# MosRulesAdmin
+# Angular 2 / Ngrx / Redux Seed
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
 
