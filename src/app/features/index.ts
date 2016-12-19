@@ -4,10 +4,12 @@ import { AppCommons } from '../common';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GoalComponent } from './goal/goal.component';
+import { LandingComponent } from './landing/landing.component';
 import { MaterialModule } from '@angular/material';
 import { NgModule } from '@angular/core';
 import { RegisterComponent } from './register/register.component';
 import { RouterModule } from '@angular/router';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreModule } from '@ngrx/store';
 import { featureRoutes } from './feature.routes';
 import { reducer } from './feature.reducers';
@@ -17,6 +19,7 @@ export const COMPONENTS = [
     AccountSummaryComponent,
     DashboardComponent,
     GoalComponent,
+    LandingComponent,
     RegisterComponent
 ];
 
@@ -26,6 +29,7 @@ export const COMPONENTS = [
         RouterModule.forChild(featureRoutes),
         MaterialModule.forRoot(),
         StoreModule.provideStore(reducer),
+        StoreDevtoolsModule.instrumentOnlyWithExtension(),
         AppCommons
     ],
     declarations: COMPONENTS,

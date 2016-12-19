@@ -7,24 +7,22 @@ export class ContainerDirective implements OnInit {
 
   fld: boolean = false;
 
+  @Input('appContainer') appContainer;
+
   constructor(private el: ElementRef, private renderer: Renderer) {
   }
 
+
   ngOnInit() {
-    console.log("init fld = " + this.fld)
+    console.log('init fld = ' + this.fld)
   }
 
   @Input() set fluid(fld: boolean) {
     if (fld) {
-      this.renderer.setElementClass(this.el.nativeElement, "expanded", true);
+      this.renderer.setElementClass(this.el.nativeElement, 'expanded', true);
     } else {
-      this.renderer.setElementClass(this.el.nativeElement, "column", true);
+      this.renderer.setElementClass(this.el.nativeElement, 'column', true);
     }
-
-    this.renderer.setElementClass(this.el.nativeElement, "row", true);
-
+    this.renderer.setElementClass(this.el.nativeElement, 'row', true);
   }
-
-  @Input("appContainer") appContainer;
-
 }

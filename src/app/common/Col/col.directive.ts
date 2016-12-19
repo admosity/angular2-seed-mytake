@@ -11,12 +11,12 @@ export class ColDirective implements OnInit {
   @Input() sm: number;
   @Input() md: number;
   @Input() lg: number;
-  @Input("appCol") appCol;
+  @Input('appCol') appCol;
 
   constructor(private el: ElementRef, private renderer: Renderer) { }
 
   ngOnInit() {
-    const cns = _.split(this.generateClassname(), " ");
+    const cns = _.split(this.generateClassname(), ' ');
     _.each(cns, cn => {
       this.renderer.setElementClass(this.el.nativeElement, cn, true);
     })

@@ -1,6 +1,6 @@
 import {ACTIONS} from './account.reducer';
 import {IAccount} from './account.model';
-import { IAppState } from '../../application.model';
+import { IAppState } from '../feature.model';
 import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs';
 import { Store } from '@ngrx/store';
