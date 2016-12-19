@@ -11,7 +11,7 @@ import { Store } from '@ngrx/store';
     template: `
        <evo-layout>
             <evo-sidenav [open]="showSidenav$ | async">
-                <evo-navitem (activate)="closeSidenav()" routerLink="/">
+                <evo-navitem (activate)="closeSidenav()" routerLink="/" icon="build">
                     Accounts
                 </evo-navitem>
             </evo-sidenav>
