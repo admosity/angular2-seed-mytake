@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { CloseSidenavAction, OpenSidenavAction, getShowSidenav } from '../feature.reducers';
 
 import { IAppState } from '../feature.model';
 import { Observable } from 'rxjs/Observable';
 import { Store } from '@ngrx/store';
-import { getShowSidenav } from '../feature.reducers';
 
 @Component({
     selector: 'mos-landing',
@@ -11,8 +11,13 @@ import { getShowSidenav } from '../feature.reducers';
     template: `
        <evo-layout>
             <evo-sidenav [open]="showSidenav$ | async">
-                <h1> Hi </h1>
+                <evo-navitem (activate)="closeSidenav()" routerLink="/">
+                    Accounts
+                </evo-navitem>
             </evo-sidenav>
+            <evo-toolbar (openMenu)="openSidenav()">
+                    Items
+            </evo-toolbar>
        </evo-layout>
     `
 })
@@ -21,5 +26,13 @@ export class LandingComponent {
 
     constructor(private store: Store<IAppState>) {
         this.showSidenav$ = this.store.select(getShowSidenav);
+    }
+
+    closeSidenav() {
+        this.store.dispatch(new CloseSidenavAction());
+    }
+
+    openSidenav() {
+        this.store.dispatch(new OpenSidenavAction());
     }
 }

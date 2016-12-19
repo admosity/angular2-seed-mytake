@@ -15,3 +15,5 @@ const combinedReducers: ActionReducer<any> = combineReducers(commonReducers);
 export function reducer(state: any, action: any) {
     return combinedReducers(state, action);
 }
+
+export { CloseSidenavAction, OpenSidenavAction } from './layout/layout.action';

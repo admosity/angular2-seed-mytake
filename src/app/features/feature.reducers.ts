@@ -22,7 +22,8 @@ export function reducer(state: any, action: any) {
 
 export const getLayoutState = (state: IAppState) => {
     return state.common.layout;
-}
+};
 export const getShowSidenav = createSelector(getLayoutState, layout.getShowSidenav);
 
+export { OpenSidenavAction, CloseSidenavAction } from '../common/common.reducer';
 
